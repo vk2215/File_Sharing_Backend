@@ -42,5 +42,6 @@ app.use('/files/download', require('./routes/download'));
 app.listen(PORT, console.log(`Listening on port ${PORT}.`));
 
 
-
+//command to allow cors through web browser
+//"C:\Program Files\Google\Chrome\Application\chrome.exe" --user-data-dir="C:\Chrome dev session" --disable-web-security
 
