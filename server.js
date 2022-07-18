@@ -5,13 +5,13 @@ const PORT = process.env.PORT || 3000;
 const path = require('path');
 const cors = require('cors');
 // Cors
-/*
+
 const corsOptions = {
   origin: (process.env.ALLOWED_CLIENTS)?.split(",")
   // ['http://localhost:3000', 'http://localhost:5000', 'http://localhost:3300']
 }
-*/
-app.use(cors());
+
+//app.use(cors());
 
 
 
@@ -23,7 +23,7 @@ app.use(cors());
 //     "optionsSuccessStatus": 204
 //   }
 //(corsOptions)
-//app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 app.use(express.static('public'));
 
 const connectDB = require('./config/db');
