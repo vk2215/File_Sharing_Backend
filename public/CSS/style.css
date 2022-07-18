@@ -21,6 +21,7 @@ body {
   left: 10px;
   width: 150px;
 }
+
 section.download {
   background: #fff;
   width: 430px;
@@ -30,13 +31,16 @@ section.download {
   padding: 2rem;
   text-align: center;
 }
+
 .download__icon {
   height: 8rem;
 }
+
 .download__meta h4 {
   margin-bottom: 0;
   line-height: 1.3;
 }
+
 .send-btn-container a {
   display: inline-block;
   font-size: 18px;
@@ -52,5 +56,5 @@ section.download {
 }
 
 .send-btn-container a:hover {
-    background: var(--dark-blue);
+  background: var(--dark-blue);
 }
