@@ -25,8 +25,8 @@ const corsOptions = {
 //   }
 //(corsOptions)
 app.use(cors(corsOptions));
-app.use(express.static('public'));
-//app.use("/", express.static(path.join(__dirname, 'public')))
+//app.use(express.static('public'));
+app.use("/", express.static(path.join(__dirname, 'public')))
 
 const connectDB = require('./config/db');
 connectDB();
